@@ -70,7 +70,7 @@
 
     // Enviar E-mail
     
-    $emailenviar = "tejconsultoria@gmail.com";
+    $emailenviar = "Coloque o seu e-mail aqui";
     $destino = $emailenviar;
     $assunto = "Contato pelo Site";
 
