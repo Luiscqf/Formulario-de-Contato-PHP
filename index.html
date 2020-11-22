@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale conosco - Plano de saúde</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header id="cabecalho">
+            <img src="images/LogoT&J-2-small.png" alt="Logo T&J Consultoria" class="image">
+            <h1 class="titleheader">Deixe seu contato e o ajudaremos a encontrar o melhor plano de saúde para você, sua família ou sua empresa.</h1>
+        </header>
+        <div class="content">
+            <form action="php/send_email.php" class="form-email" method="post">
+                <p><input type="text" name="nome" placeholder="Nome"p>
+                <p><input type="text" name="telefone" placeholder="Telefone"/></p>
+                <p><input type="text" name="email" placeholder="E-mail"/></p>
+                <p>
+                    <input type="text" name="cidade" placeholder="Cidade"/>
+                    <select name="estado" id="estado" placeholder="UF">
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MS">MS</option>
+                        <option value="MT">MT</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                    </select>
+                </p>
+                <p>
+                    <select name="tipopessoa" id="tipoPessoa">
+                        <option value="Pessoa Física">Pessoa Física</option>
+                        <option value="Pessoa Jurídica">Pessoa Jurídica</option>
+                    </select>
+                </p>
+                <p><input type="number" name="pessoasNumero" id="pessoasNumero" placeholder="Número de vidas"></p>
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Observação"></textarea>
+                <p><button type="submit" name="send" value="Enviar">Enviar mensagem</button></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
